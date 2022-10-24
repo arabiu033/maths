@@ -1,10 +1,14 @@
-# Leaderboard
+# Maths Magicians
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard Project
+# Maths Project
 
-> -
+> Simple website for maths lovers. It is a Single Page App (SPA) that allows users to -:
+> - Make simple calculations.
+> - Read a random math-related quote.
+> 
+> Built using react
 
 ## Built With
 
