@@ -14,14 +14,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+main {
+  display: grid;
+  grid-template-rows: 2fr 8fr;
+  width: 450px;
+  height: 600px;
+  row-gap: 0;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  gap: 1px;
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  border-radius: 0;
+  border: 0.5px solid gray;
+  font-size: 1.5rem;
+}
+
+.rows button:last-child {
+  background-color: orange;
+}
+
+.rows:last-child button:first-child {
+  width: 210%;
+  flex-grow: -5;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  flex: 1;
+}
+
+#screen {
+  width: auto;
+  height: 120px;
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  font-size: 36px;
+}
+
+#screen span {
+  padding: 10px;
 }
