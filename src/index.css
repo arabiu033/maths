@@ -36,15 +36,6 @@ main div {
   flex: 1;
 }
 
-.rows:last-child button:first-child {
-  width: 210%;
-  flex-grow: -5;
-}
-
-.rows button:last-child {
-  background-color: orange;
-}
-
 button {
   width: 100%;
   border-radius: 0;
@@ -52,10 +43,19 @@ button {
   font-size: 1.5rem;
 }
 
+.rows button:last-child {
+  background-color: orange;
+}
+
+.rows:last-child button:first-child {
+  width: 210%;
+  flex-grow: -5;
+}
+
 .rows {
   display: flex;
   flex-direction: row;
-  gap: 1px;;
+  gap: 1px;
   flex: 1;
 }
 
