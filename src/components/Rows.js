@@ -13,7 +13,7 @@ class Rows extends React.Component {
     for (let i = 0; i < row.length; i += 1) {
       buttons.push(<button type="button" id="" className="">{ row[i] }</button>);
     }
-    
+
     return buttons;
   }
 }
