@@ -13,11 +13,11 @@ class Calc extends React.Component {
       <main>
         <Display />
         <div>
-          <div><Rows row={['Ac', '+/-', '%', '/']} /></div>
-          <div><Rows row={['7', '8', '9', 'X']} /></div>
-          <div><Rows row={['4', '5', '6', '-']} /></div>
-          <div><Rows row={['1', '2', '3', '+']} /></div>
-          <div><Rows row={['0', '.', '=']} /></div>
+          <div className="rows"><Rows row={['Ac', '+/-', '%', '÷']} /></div>
+          <div className="rows"><Rows row={['7', '8', '9', 'X']} /></div>
+          <div className="rows"><Rows row={['4', '5', '6', '-']} /></div>
+          <div className="rows"><Rows row={['1', '2', '3', '+']} /></div>
+          <div className="rows"><Rows row={['0', '.', '=']} /></div>
         </div>
       </main>
     );
