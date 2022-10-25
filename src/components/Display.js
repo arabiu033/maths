@@ -9,7 +9,7 @@ class Display extends React.Component {
   render() {
     const { value } = this.state;
     return (
-      <div id="screen">{ value }</div>
+      <div id="screen"><span>{ value }</span></div>
     );
   }
 }
