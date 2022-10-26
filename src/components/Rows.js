@@ -5,13 +5,19 @@ class Rows extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.buttonClicks = this.buttonClicks.bind(this);
+  }
+
+  buttonClicks(e) {
+    const { buttonClicks } = this.props;
+    buttonClicks(e.target.innerText);
   }
 
   render() {
     const { row } = this.props;
     const buttons = [];
     for (let i = 0; i < row.length; i += 1) {
-      buttons.push(<button type="button" id="" className="">{ row[i] }</button>);
+      buttons.push(<button type="button" key={i} onClick={this.buttonClicks}>{ row[i] }</button>);
     }
 
     return buttons;
@@ -19,7 +25,8 @@ class Rows extends React.Component {
 }
 
 Rows.propTypes = {
-  row: PropTypes.string.isRequired,
+  row: PropTypes.arrayOf(PropTypes.string).isRequired,
+  buttonClicks: PropTypes.func.isRequired,
 };
 
 export default Rows;
