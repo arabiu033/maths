@@ -6,9 +6,9 @@ const Display = (props) => {
   return (
     <div id="screen">
       <span>
-        { `${obj.total ? obj.total : ''} 
-        ${obj.operation ? obj.operation : ''} 
-        ${obj.next ? obj.next : ''}` }
+        { `${obj.total ?? ''} 
+        ${obj.operation ?? ''} 
+        ${obj.next ?? ''}` }
       </span>
     </div>
   );
