@@ -1,32 +1,28 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import calculate from '../logic/calculate';
 
-class Rows extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.buttonClicks = this.buttonClicks.bind(this);
+const Rows = (props) => {
+  const { row, setObj } = props;
+  const buttons = [];
+  for (let i = 0; i < row.length; i += 1) {
+    buttons.push(
+      <button
+        type="button"
+        key={i}
+        onClick={(e) => setObj((obj) => calculate(obj, e.target.innerText))}
+      >
+        { row[i] }
+      </button>,
+    );
   }
 
-  buttonClicks(e) {
-    const { buttonClicks } = this.props;
-    buttonClicks(e.target.innerText);
-  }
-
-  render() {
-    const { row } = this.props;
-    const buttons = [];
-    for (let i = 0; i < row.length; i += 1) {
-      buttons.push(<button type="button" key={i} onClick={this.buttonClicks}>{ row[i] }</button>);
-    }
-
-    return buttons;
-  }
-}
+  return buttons;
+};
 
 Rows.propTypes = {
   row: PropTypes.arrayOf(PropTypes.string).isRequired,
-  buttonClicks: PropTypes.func.isRequired,
+  setObj: PropTypes.func.isRequired,
 };
 
 export default Rows;
