@@ -9,7 +9,7 @@ const Home = () => (
     <div>
       <p>
         Lorem ipsum dolor sit amet, at habemus suscipit comprehensam usu.
-        Deserunt scribentur id eam, ex persecuti neglegentur mea, 
+        Deserunt scribentur id eam, ex persecuti neglegentur mea,
         his tantas urbanitas id. Usu oratio antiopam temporibus eu. Sed
         an legimus repudiare, probo civibus his ex.Everti recteque et sea,
         no cetero menandri mei. Ut vel summo omittantur. At inciderint temporibus has.
