@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family:
@@ -12,18 +18,28 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: skyblue;
+  background-color: #450a2c;
   min-height: 100vh;
+}
+
+.calc {
+  padding: 5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.calc h1 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  font-weight: 200;
 }
 
 main {
   display: grid;
   grid-template-rows: 2fr 8fr;
-  width: 450px;
+  width: 40%;
   height: 600px;
   row-gap: 0;
 }
@@ -48,7 +64,7 @@ button {
 }
 
 .rows:last-child button:first-child {
-  width: 210%;
+  width: 200%;
   flex-grow: -5;
 }
 
