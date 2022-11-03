@@ -45,3 +45,18 @@ describe('Division', () => {
   })
 })
 
+describe('Negation', () => {
+​
+  test('First', () => {
+    expect(calculate({total: null, next: null, operation: null,}, '+/-')).toStrictEqual({});
+  })
+​
+  test('Second', () => {
+    expect(calculate({total: '10', next: '5', operation: '+',}, '+/-')).toStrictEqual({total: '10', next: '-5', operation: '+'});
+  })
+​
+  test('Third', () => {
+    expect(calculate({total: null, next: '50', operation: '+',}, '+/-')).toStrictEqual({total: null, next: '-50', operation: '+'});
+  })
+})
+
