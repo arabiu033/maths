@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  flex-shrink: 1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+li {
+  padding-bottom: 1px;
+  padding-left: 4rem;
+  border-left: 1px solid skyblue;
+  font-size: 1.3rem;
+}
+
+li span {
+  border-bottom: 1px solid skyblue;
+  padding-bottom: 1px;
+}
+
+a {
+  color: skyblue;
+}
+
+li:first-child {
+  padding: 0;
+  border: none;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+}

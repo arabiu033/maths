@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  color: skyblue;
+  background-color: #450a2c;
+  min-height: 100vh;
+}
+
+.calc {
+  padding: 2.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.calc h1 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 2fr 8fr;
+  width: 40%;
+  height: 600px;
+  row-gap: 0;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  gap: 1px;
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  border-radius: 0;
+  border: 0.5px solid gray;
+  font-size: 1.5rem;
+}
+
+.rows button:last-child {
+  background-color: orange;
+}
+
+.rows:last-child button:first-child {
+  width: 200%;
+  flex-grow: -5;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  flex: 1;
+}
+
+#screen {
+  width: auto;
+  height: 120px;
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  font-size: 36px;
+}
+
+#screen span {
+  padding: 10px;
+}
