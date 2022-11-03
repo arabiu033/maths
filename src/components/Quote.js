@@ -4,7 +4,7 @@ import '../css/quote.css';
 const Quote = () => (
   <div className="quote">
     <h3>
-      Mathematics is not about numbers, equations, computations,
+      <span>Mathematics is not about numbers, equations, computations,</span>
       <br />
       or algorithms: it is about understanding. -- William Paul Thurston
     </h3>
