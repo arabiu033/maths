@@ -19,7 +19,7 @@
 
 ## Live Demo
 
-[**See Project 🚀**]();
+[**See Project 🚀**](https://arabiu033-maths.netlify.app);
 
 ## Get Started
 
